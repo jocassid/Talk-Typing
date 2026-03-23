@@ -2,9 +2,6 @@
 from typing import List, Tuple, Set, FrozenSet, Dict
 
 def main():
-
-    # sequence, set, and mapping types
-    # We're not saying anything about the type of values within sequence/mapping
     list_of_ints: List[int] = [1, 2, 3]
     a_tuple: Tuple[bool, int] = (True, 5)
 

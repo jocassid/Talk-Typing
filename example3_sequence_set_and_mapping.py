@@ -1,6 +1,5 @@
 
 def main():
-
     # sequence, set, and mapping types
     # We're not saying anything about the type of values within sequence/mapping
     a_list: list = []

@@ -1,8 +1,5 @@
 
 def main():
-
-    # sequence, set, and mapping types
-    # We're not saying anything about the type of values within sequence/mapping
     list_of_ints: list[int] = [1, 2, 3]
     a_tuple: tuple[bool, int] = (True, 5)
 

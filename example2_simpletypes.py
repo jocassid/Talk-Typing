@@ -2,7 +2,6 @@
 
 
 def main():
-
     # numeric types
     an_int: int = 10
     a_float: float = 10.0
