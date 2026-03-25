@@ -20,7 +20,9 @@ def show_operation(
         f'{value1!r} ({label1}) + {value2} ({label2}) = '
         f'{value_sum!r} ({type(value_sum).__name__})'
     )
-def main():
+
+
+def main() -> None:
     sample_values: Dict[str, numeric] = {
         'int': 1,
         'float': 2.5,
@@ -37,6 +39,8 @@ def main():
                 print(f'Cannot add {label1} and {label2}')
             else:
                 show_operation(label1, value1, label2, value2, value_sum)
+
+    not_numeric: numeric = 'foo'
 
 if __name__ == "__main__":
     main()

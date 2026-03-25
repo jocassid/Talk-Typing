@@ -2,16 +2,16 @@
 from typing import Optional
 
 
-def greeting(name: str | None = None):
+def greeting(name: str | None = None) -> None:
     name = name or 'stranger'
     print(f'Hello, {name}!')
 
 
-def greeting_before_py3_10(name: Optional[str] = None):
+def greeting_before_py3_10(name: Optional[str] = None) -> None:
     greeting(name)
 
 
-def main():
+def main() -> None:
     greeting()
     greeting(None)
     greeting('Alice')
@@ -19,6 +19,8 @@ def main():
     greeting_before_py3_10()
     greeting_before_py3_10('Bob')
     greeting_before_py3_10(['Alice', 'Bob'])
+
+    not_optional: str = None
 
 
 if __name__ == "__main__":

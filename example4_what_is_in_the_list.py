@@ -1,5 +1,5 @@
 
-def main():
+def main() -> None:
     list_of_ints: list[int] = [1, 2, 3]
     a_tuple: tuple[bool, int] = (True, 5)
 
@@ -7,7 +7,7 @@ def main():
     a_frozenset: frozenset[float] = frozenset([0.5, 0.25, 0.125])
 
     a_dict: dict[str, int] = {'Ohio': 1803, 'New York': 1788}
-
+    wrong_types: dict[str, int] = {'OH': 'Ohio', 'NY': 'New York'}
 
 if __name__ == "__main__":
     main()

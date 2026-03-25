@@ -12,7 +12,9 @@ def main():
             {'product_id': 456, 'quantity': 1},
         ]
     }
+
     cache[5] = 'blurgh'  # wrong key type
+    cache['foo'] = {3, 1, (3, 4)}
 
 
 if __name__ == "__main__":

@@ -1,7 +1,6 @@
 
 
-
-def main():
+def main() -> None:
     # numeric types
     an_int: int = 10
     a_float: float = 10.0
@@ -16,6 +15,7 @@ def main():
     a_bytearray: bytearray = bytearray()
     a_memory_view: memoryview = memoryview(b'foo')
 
+    result: int = "A suffusion of yellow"  # TYPE ERROR
 
 if __name__ == "__main__":
     main()
